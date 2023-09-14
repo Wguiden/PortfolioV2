@@ -13,14 +13,6 @@ const work = () => {
   // const $pageLoader = document.querySelector('.page-loader');
 
 
-  useEffect(() => {
-    //Will mount
-
-    return () => {
-      //Did mount
-    }
-  }, [])
-
 
 
 
