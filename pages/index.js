@@ -1,14 +1,14 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
 import Hero from '../components/Hero';
-import Instagram from '../components/Instagram';
 import Slider from '../components/Slider';
 import { SliderData } from '../components/SliderData';
 import transition from '../transition';
 import homeTransition from '../homeTransition';
 import gsap from 'gsap';
 import React, { useEffect } from 'react'
+import Image from 'next/image'
+
 
 
 
@@ -37,7 +37,7 @@ function Home() {
       <div className="landing-wrapper flex flex-col-reverse md:flex-row justify-center h-full md:h-screen max-w-screen-lg px-10 md:p-0">
 
         <div className="left-col lg:w-1/2 relative flex items-end	hidden md:flex">
-          <img src="../warren-g2.png" alt="" />
+          <Image src="../warren-g2.png" alt="" />
         </div>
 
         <div className="right-col text-white h-screen md:h-full lg:w-1/2 flex flex-col justify-center">

@@ -3,6 +3,8 @@ import Hero from '../components/Hero'
 import Portfolio from '../components/Portfolio'
 import gsap from 'gsap'
 import transition from "../transition"
+import Image from 'next/image'
+
 
 
 
@@ -28,7 +30,7 @@ const work = () => {
           <div id="inner-content" className="max-w-lg">
             <div className="w-full h-80 h-full rounded-2xl relative overflow-hidden mb-5">
               <a href="https://cedarcide.com/">
-                <img src="../cedarcide.jpeg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
+                <Image src="../cedarcide.jpeg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
               </a>
             </div>       
 
@@ -47,14 +49,14 @@ const work = () => {
           <div id="inner-content" className="max-w-lg">
             <div className="w-full h-80 h-full rounded-2xl relative overflow-hidden mb-5">
               <a href="https://quiet-selkie-894032.netlify.app/">
-                <img src="../projects/crypto-tracker.jpeg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
+                <Image src="../projects/crypto-tracker.jpeg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
               </a>
             </div>       
 
             <p className="text-3xl">
               <a href="https://quiet-selkie-894032.netlify.app/" className="hover:text-slate-500 transition-all">Crypto Tracker</a>
             </p>
-            <p className="text-gray-400">Track the top crypto currency prices using Coingecko API. Prices can be displayed in USD or ETH. Coin's historical price data is shown and charted to the user with options for selecting time intervals.</p>
+            <p className="text-gray-400">Track the top crypto currency prices using Coingecko API. Prices can be displayed in USD or ETH. Coins historical price data is shown and charted to the user with options for selecting time intervals.</p>
           </div>
 
         </div>
@@ -67,7 +69,7 @@ const work = () => {
           <div id="inner-content" className="max-w-lg">
             <div className="w-full h-80 h-full rounded-2xl relative overflow-hidden mb-5">
               <a href="https://happyjoes.com/">
-                <img src="../projects/Happy-joes.jpg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
+                <Image src="../projects/Happy-joes.jpg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
               </a>
             </div>       
 
@@ -86,7 +88,7 @@ const work = () => {
           <div id="inner-content" className="max-w-lg">
             <div className="w-full h-80 h-full rounded-2xl relative overflow-hidden mb-5">
               <a href="http://jaydreaming.mysites.io/">
-                <img src="../projects/jayDreaming.png" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
+                <Image src="../projects/jayDreaming.png" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
               </a>
             </div>       
 
@@ -106,7 +108,7 @@ const work = () => {
           <div id="inner-content" className="max-w-lg">
             <div className="w-full h-80 h-full rounded-2xl relative overflow-hidden mb-5">
               <a href="https://whiteunicornagency.com/">
-                <img src="../projects/WU-project.png" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
+                <Image src="../projects/WU-project.png" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
               </a>
             </div>       
 
@@ -128,7 +130,7 @@ const work = () => {
           <div id="inner-content" className="max-w-lg">
             <div className="w-full h-80 h-full rounded-2xl relative overflow-hidden mb-5">
               <a href="https://bespoke-gaufre-6f4afb.netlify.app/">
-                <img src="../projects/Yearly-goals.jpeg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
+                <Image src="../projects/Yearly-goals.jpeg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
               </a>
             </div>       
 

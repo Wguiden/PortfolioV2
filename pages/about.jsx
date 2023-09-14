@@ -3,6 +3,8 @@ import Hero from '../components/Hero'
 import Portfolio from '../components/Portfolio'
 import gsap from 'gsap'
 import transition from '../transition'
+import Image from 'next/image'
+
 
 
 const about = () => {
@@ -25,7 +27,7 @@ const about = () => {
         </div>
 
         <div className="right-col w-1/2 relative rounded-2xl overflow-hidden max-h-[650px]">
-          <img src="../warren-g3.jpg" alt="" />
+          <Image src="../warren-g3.jpg" alt="" />
         </div>
 
 

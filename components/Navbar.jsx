@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import Image from 'next/image'
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -42,7 +44,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link href='/'>
-              <img src="../logos/WG-logo.png" alt="" className="w-14  sm:w-20 cursor-pointer max-w-none"/>
+              <Image src="../logos/WG-logo.png" alt="" className="w-14  sm:w-20 cursor-pointer max-w-none"/>
             </Link>
           </li>
           <li className='text-center'>

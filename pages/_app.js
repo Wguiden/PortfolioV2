@@ -6,6 +6,8 @@ import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import  { AnimatePresence, motion } from 'framer-motion'
 import { useRouter } from 'next/router';
+import Image from 'next/image'
+
 
 function MyApp({ Component, pageProps }) {
 
@@ -338,7 +340,7 @@ function MyApp({ Component, pageProps }) {
           </ul>
 
           <div className="load-logo-wrapper">
-            <img src="../logos/WG-logo.png" alt="" className="w-14  sm:w-36 cursor-pointer max-w-none"/>
+            <Image src="../logos/WG-logo.png" alt="" className="w-14  sm:w-36 cursor-pointer max-w-none"/>
           </div>
       </div>
 

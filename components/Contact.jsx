@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div className='max-w-[1240px] m-auto p-4 h-screen flex justify-center flex-col items-center'>
-        <h1 className='text-4xl font-bold text-center p-4 text-white'>Let's work together</h1>
+        <h1 className='text-4xl font-bold text-center p-4 text-white'>Lets work together</h1>
         <form className='max-w-[600px]'>
             <div className='grid grid-cols-2 gap-2'>
                 <input className='border shadow-lg p-3' type="text" placeholder='Name' />
