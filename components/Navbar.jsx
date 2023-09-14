@@ -14,44 +14,47 @@ const Navbar = () => {
   useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
-        setColor('#ffffff');
-        setTextColor('#000000');
+        setColor('#111');
+        //setTextColor('#000000');
       } else {
         setColor('transparent');
-        setTextColor('#ffffff');
+        //setTextColor('#ffffff');
       }
     };
     window.addEventListener('scroll', changeColor);
   }, []);
 
   return (
+    
     <div
       style={{ backgroundColor: `${color}` }}
-      className='fixed left-0 top-0 w-full z-10 ease-in duration-300'
+      className='fixed left-0 top-0 w-full z-10 ease-in duration-300 z-20'
     >
-      <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
-        <Link href='/'>
-          <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>
-            Captur
-          </h1>
-        </Link>
-        <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
-          <li className='p-4'>
-            <Link href='/'>Home</Link>
+
+      <div className='max-w-[1240px] m-auto flex justify-center items-center p-4 text-white'>
+
+        <ul style={{ color: `${textColor}` }} className='flex gap-5 text-sm sm:text-lg sm:gap-5 items-center'>
+          <li className='text-center'>
+            <Link href='/work'>Projects</Link>
           </li>
-          <li className='p-4'>
-            <Link href='/#gallery'>Gallery</Link>
+          <li className='text-center'>
+            <Link href='/resume'>Resume</Link>
           </li>
-          <li className='p-4'>
-            <Link href='/work'>Work</Link>
+          <li>
+            <Link href='/'>
+              <img src="../logos/WG-logo.png" alt="" className="w-14  sm:w-20 cursor-pointer max-w-none"/>
+            </Link>
           </li>
-          <li className='p-4'>
+          <li className='text-center'>
+            <Link href='/about'>About</Link>
+          </li>
+          <li className='text-center'>
             <Link href='/contact'>Contact</Link>
           </li>
         </ul>
 
         {/* Mobile Button */}
-        <div onClick={handleNav} className='block sm:hidden z-10'>
+        <div onClick={handleNav} className='hidden z-10'>
           {nav ? (
             <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
           ) : (

@@ -4,6 +4,8 @@ const nextConfig = {
 }
 
 module.exports = {
+  transpilePackages: ['gsap'],
+
   images: {
     domains: [
       'images.unsplash.com',

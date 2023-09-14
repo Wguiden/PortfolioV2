@@ -1,7 +1,37 @@
+
+
 import { Html, Head, Main, NextScript } from 'next/document';
+import Script from "next/script";
+import React, { useState, useEffect } from 'react'
+
+// import { $body } from "../resources/utils/globals";
+// import loadScript from "../resources/utils/helpers/load-script";
+import gsap from "gsap";
+import scrollTrigger from "gsap";
+
+
+
+
+
 
 export default function Document() {
+
+
+  const pageLoader = {
+    height: "100vh",
+    background: "gray",
+    position: "fixed",
+    top: 0,
+    width: "100vw",
+    zIndex: 100,
+    transform: "translateY(-100%)"
+  }
+
+
+
   return (
+
+
     <Html>
       <Head>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
@@ -14,11 +44,28 @@ export default function Document() {
           href='https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap'
           rel='stylesheet'
         />
+
       </Head>
-      <body>
+
+
+      {/* <div className="page-loader" style={pageLoader}></div> */}
+
+
+      <body className="bg-black bg-opacity-95 body">
         <Main />
         <NextScript />
       </body>
+
+
+
     </Html>
+
+
   );
+
+  
 }
+
+
+
+
