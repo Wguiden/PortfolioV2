@@ -35,16 +35,16 @@ const Navbar = () => {
 
       <div className='max-w-[1240px] m-auto flex justify-center items-center p-4 text-white'>
 
-        <ul style={{ color: `${textColor}` }} className='flex gap-5 text-sm sm:text-lg sm:gap-5 items-center'>
+        <ul style={{ color: `${textColor}` }} className='grid grid-cols-5 gap-5 text-sm sm:text-lg sm:gap-5 items-center'>
           <li className='text-center'>
             <Link href='/work'>Projects</Link>
           </li>
           <li className='text-center'>
             <Link href='/resume'>Resume</Link>
           </li>
-          <li>
+          <li className='flex justify-center items-center'>
             <Link href='/'>
-              <Image src="../logos/WG-logo.png" alt="" className="w-14  sm:w-20 cursor-pointer max-w-none"/>
+              <Image src="/logos/WG-logo.png" alt="" className="w-14 h-auto sm:w-20 cursor-pointer max-w-none" height="50px" width="50px"/>
             </Link>
           </li>
           <li className='text-center'>

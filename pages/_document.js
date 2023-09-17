@@ -3,6 +3,8 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 import Script from "next/script";
 import React, { useState, useEffect } from 'react'
+import Image from 'next/image'
+
 
 // import { $body } from "../resources/utils/globals";
 // import loadScript from "../resources/utils/helpers/load-script";

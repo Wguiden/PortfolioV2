@@ -18,13 +18,15 @@ function MyApp({ Component, pageProps }) {
     var tl = gsap.timeline();
 
     
-    gsap.set(".load-logo-wrapper img", {top: 240, opacity: 1, position: 'relative'});
+    gsap.set(".load-logo-wrapper", {top: 240, opacity: 1});
+    gsap.set(".load-logo-wrapper", {padding: "20px 0px"});
+
 
     
     setTimeout(() => {
 
-        tl.to(".load-logo-wrapper img", {duration: 1, top: 0, opacity: 1, ease: "back.out(1.4)"});
-        tl.to(".load-logo-wrapper img", {delay: .5, duration: .5, top: 240, opacity: 1, ease: "power3.in"});
+        tl.to(".load-logo-wrapper", {duration: 1, top: 0, opacity: 1, ease: "back.out(1.4)"});
+        tl.to(".load-logo-wrapper", {delay: .5, duration: .5, top: 240, opacity: 1, ease: "power3.in"});
         tl.to(".load-container li", {duration: .6, stagger: .20, y: "-100%", opacity: 1, ease: "power2.in"}, "-=.3");
         tl.to(".load-container", {display: "none"});
 
@@ -339,9 +341,12 @@ function MyApp({ Component, pageProps }) {
             <li></li>
           </ul>
 
-          <div className="load-logo-wrapper">
-            <Image src="../logos/WG-logo.png" alt="" className="w-14  sm:w-36 cursor-pointer max-w-none"/>
+          <div className="relative overflow-hidden py-2">
+            <div className="load-logo-wrapper relative">
+                <Image src="/logos/WG-logo.png" alt="" className="w-14 h-auto sm:w-36 cursor-pointer max-w-none" height="150px" width="150px"/>
+            </div>
           </div>
+
       </div>
 
 

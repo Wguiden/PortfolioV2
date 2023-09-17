@@ -7,30 +7,22 @@ import Image from 'next/image'
 
 
 
-
-
 const work = () => {
   
 
-  // const $pageLoader = document.querySelector('.page-loader');
-
-
-
-
-
   return (
-    <div className="work md:pt-40 md:p-20 p-10">
+    <div className="work md:pt-40 md:p-20 sm:pb-10 py-24 p-10">
 
       <div className="text-white text-3xl md:text-6xl text-center">Projects</div>
 
-      <div className="wrapper grid md:grid-cols-3 grid-cols-1 gap-8 md:pt-20 pt-10 gap-y-20">
+      <div className="wrapper grid md:grid-cols-3 grid-cols-1 gap-8 md:pt-20 pt-10 gap-y-8 sm:gap-y-20">
 
         <div className="flex flex-col justify-start items-center text-white">
 
           <div id="inner-content" className="max-w-lg">
-            <div className="w-full h-80 h-full rounded-2xl relative overflow-hidden mb-5">
+            <div className="w-full h-60 sm:h-80 h-full rounded-2xl relative overflow-hidden mb-5">
               <a href="https://cedarcide.com/">
-                <Image src="../cedarcide.jpeg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
+                <Image src="/cedarcide.jpeg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" layout="fill" objectFit="cover"/>
               </a>
             </div>       
 
@@ -47,9 +39,9 @@ const work = () => {
         <div className="flex flex-col justify-start items-center text-white">
 
           <div id="inner-content" className="max-w-lg">
-            <div className="w-full h-80 h-full rounded-2xl relative overflow-hidden mb-5">
+            <div className="w-full h-60 sm:h-80 h-full rounded-2xl relative overflow-hidden mb-5">
               <a href="https://quiet-selkie-894032.netlify.app/">
-                <Image src="../projects/crypto-tracker.jpeg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
+                <Image src="/projects/crypto-tracker.jpeg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" layout="fill" objectFit="cover"/>
               </a>
             </div>       
 
@@ -67,9 +59,9 @@ const work = () => {
         <div className="flex flex-col justify-start items-center text-white">
 
           <div id="inner-content" className="max-w-lg">
-            <div className="w-full h-80 h-full rounded-2xl relative overflow-hidden mb-5">
+            <div className="w-full h-60 sm:h-80 h-full rounded-2xl relative overflow-hidden mb-5">
               <a href="https://happyjoes.com/">
-                <Image src="../projects/Happy-joes.jpg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
+                <Image src="/projects/Happy-joes.jpg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" layout="fill" objectFit="cover"/>
               </a>
             </div>       
 
@@ -86,9 +78,9 @@ const work = () => {
         <div className="flex flex-col justify-start items-center text-white">
 
           <div id="inner-content" className="max-w-lg">
-            <div className="w-full h-80 h-full rounded-2xl relative overflow-hidden mb-5">
+            <div className="w-full h-60 sm:h-80 h-full rounded-2xl relative overflow-hidden mb-5">
               <a href="http://jaydreaming.mysites.io/">
-                <Image src="../projects/jayDreaming.png" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
+                <Image src="/projects/jayDreaming.png" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" layout="fill" objectFit="cover"/>
               </a>
             </div>       
 
@@ -106,9 +98,9 @@ const work = () => {
         <div className="flex flex-col justify-start items-center text-white">
 
           <div id="inner-content" className="max-w-lg">
-            <div className="w-full h-80 h-full rounded-2xl relative overflow-hidden mb-5">
+            <div className="w-full h-60 sm:h-80 h-full rounded-2xl relative overflow-hidden mb-5">
               <a href="https://whiteunicornagency.com/">
-                <Image src="../projects/WU-project.png" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
+                <Image src="/projects/WU-project.png" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" layout="fill" objectFit="cover"/>
               </a>
             </div>       
 
@@ -128,9 +120,9 @@ const work = () => {
         <div className="flex flex-col justify-start items-center text-white">
 
           <div id="inner-content" className="max-w-lg">
-            <div className="w-full h-80 h-full rounded-2xl relative overflow-hidden mb-5">
+            <div className="w-full h-60 sm:h-80 h-full rounded-2xl relative overflow-hidden mb-5">
               <a href="https://bespoke-gaufre-6f4afb.netlify.app/">
-                <Image src="../projects/Yearly-goals.jpeg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" />
+                <Image src="/projects/Yearly-goals.jpeg" alt="" className="absolute h-full w-full object-cover hover:scale-105 transition-all duration-500" layout="fill" objectFit="cover"/>
               </a>
             </div>       
 

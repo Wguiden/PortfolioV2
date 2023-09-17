@@ -7,7 +7,7 @@ const resume = () => {
   return (
 
     <div className="flex justify-center">
-      <div className="max-w-screen-lg w-full pt-40">
+      <div className="max-w-screen-lg w-full pt-40 px-5">
           <h2 className="text-white text-6xl pb-10">Warren Guiden</h2>
 
           <div className="intro-text text-white">
@@ -16,10 +16,10 @@ const resume = () => {
           </div>
 
 
-          <div className="work-experience grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 py-20">
+          <div className="work-experience grid grid-cols-1 gap-x-12 gap-y-5 sm:gap-y-16 sm:grid-cols-2 py-20">
             <div className="card group relative flex flex-col items-start p-5 rounded-2xl overflow-hidden hover:bg-sky-900 transition-all">
               <div className="icon relative h-[70px] w-[70px] flex justify-center p-4 rounded-full bg-gray-900 mb-4">
-              <Image className="h-full" src="../WU-logo.png" alt="" />
+                <Image className="h-full" src="/WU-logo.png" alt="" height="30px" width="30px"/>
               </div>
 
               <div className="job-headings text-white">
@@ -44,7 +44,7 @@ const resume = () => {
 
               <a href="https://whiteunicornagency.com/" className="cursor-pointer hover:scale-110 transition-all">
                 <div className="link-icon flex gap-3 text-white items-center py-5">
-                <Image src="../logos/link-icon.png" alt="" className="w-5"/>
+                <Image src="/logos/link-icon.png" alt="" className="w-5" height="30px" width="30px"/>
                   <p>WUA</p>
                 </div>                
               </a>
@@ -53,7 +53,7 @@ const resume = () => {
 
             <div className="card group relative flex flex-col items-start p-5 rounded-2xl overflow-hidden hover:bg-sky-900 transition-all">
               <div className="icon relative h-[70px] w-[70px] flex justify-center p-4 rounded-full bg-gray-900 mb-4">
-                <Image className="h-full" src="../cedarcide-logo2.png" alt="" />
+                <Image className="h-full" src="/cedarcide-logo2.png" alt="" height="30px" width="35px"/>
               </div>
 
               <div className="job-headings text-white">
@@ -76,7 +76,7 @@ const resume = () => {
 
               <a href="https://cedarcide.com/" className="cursor-pointer hover:scale-110 transition-all">
                 <div className="link-icon flex gap-3 text-white items-center py-5">
-                  <Image src="../logos/link-icon.png" alt="" className="w-5"/>
+                  <Image src="/logos/link-icon.png" alt="" className="w-5" height="30px" width="30px"/>
                   <p>Cedarcide</p>
                 </div>                
               </a>
@@ -87,7 +87,7 @@ const resume = () => {
 
             <div className="card group relative flex flex-col items-start p-5 rounded-2xl overflow-hidden hover:bg-sky-900 transition-all">
               <div className="icon relative h-[70px] w-[70px] flex justify-center p-4 rounded-full bg-gray-900 mb-4">
-                <Image className="h-full" src="../recreationDallas-logo.png" alt="" />
+                <Image className="h-full" src="/recreationDallas-logo.png" alt="" height="30px" width="35px"/>
               </div>
 
               <div className="job-headings text-white">
@@ -107,7 +107,7 @@ const resume = () => {
 
               <a href="https://recreationdallas.com/" className="cursor-pointer hover:scale-110 transition-all">
                 <div className="link-icon flex gap-3 text-white items-center py-5">
-                  <Image src="../logos/link-icon.png" alt="" className="w-5"/>
+                  <Image src="/logos/link-icon.png" alt="" className="w-5" height="30px" width="30px"/>
                   <p>Recreation Dallas</p>
                 </div>                
               </a>
@@ -118,7 +118,7 @@ const resume = () => {
 
             <div className="card group relative flex flex-col items-start p-5 rounded-2xl overflow-hidden hover:bg-sky-900 transition-all">
               <div className="icon relative h-[70px] w-[70px] flex justify-center p-4 rounded-full bg-gray-900 mb-4">
-                <Image className="h-full" src="../logos/WG-logo.png" alt="" />
+                <Image className="h-full" src="/logos/WG-logo.png" alt="" height="30px" width="40px"/>
               </div>
 
               <div className="job-headings text-white">
@@ -189,79 +189,79 @@ const resume = () => {
 
             <div className="skill-grid grid grid-cols-3 gap-4">
 
-              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4">
-                <Image  className="w-8" src="../logos/react-logo.png" alt="" />
-                <p className="text-white text-xl">React JS</p>
+              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4 justify-center sm:justify-start">
+                <Image  className="w-8" src="/logos/react-logo.png" alt="" height="30px" width="30px"/>
+                <p className="text-white text-xl hidden sm:block">React JS</p>
               </div>
 
-              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4">
-                <Image  className="w-8" src="../logos/javascript-logo.png" alt="" />
-                <p className="text-white text-xl">Javascript</p>
+              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4 justify-center sm:justify-start">
+                <Image  className="w-8" src="/logos/javascript-logo.png" alt="" height="30px" width="30px"/>
+                <p className="text-white text-xl hidden sm:block">Javascript</p>
               </div>
 
-              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4">
-                <Image  className="w-8" src="../logos/scss-logo.png" alt="" />
-                <p className="text-white text-xl">Sass</p>
+              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4 justify-center sm:justify-start">
+                <Image  className="w-8" src="/logos/scss-logo.png" alt="" height="30px" width="30px"/>
+                <p className="text-white text-xl hidden sm:block">Sass</p>
               </div>
 
-              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4">
-                <Image  className="w-8" src="../logos/nextjs-logo.png" alt="" />
-                <p className="text-white text-xl">Next JS</p>
+              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4 justify-center sm:justify-start">
+                <Image  className="w-8" src="/logos/nextjs-logo.png" alt="" height="30px" width="30px"/>
+                <p className="text-white text-xl hidden sm:block">Next JS</p>
               </div>
 
-              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4">
-                <Image  className="w-8" src="../logos/html5.png" alt="" />
-                <p className="text-white text-xl">HTML5</p>
+              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4 justify-center sm:justify-start">
+                <Image  className="w-8" src="/logos/html5.png" alt="" height="30px" width="30px"/>
+                <p className="text-white text-xl hidden sm:block">HTML5</p>
               </div>
 
-              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4">
-                <Image  className="w-8" src="../logos/mysql-logo.png" alt="" />
-                <p className="text-white text-xl">MySQL</p>
+              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4 justify-center sm:justify-start">
+                <Image  className="w-8" src="/logos/mysql-logo.png" alt="" height="30px" width="40px"/>
+                <p className="text-white text-xl hidden sm:block">MySQL</p>
               </div>
 
-              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4">
-                <Image  className="w-8" src="../logos/git-logo.png" alt="" />
-                <p className="text-white text-xl">Git</p>
+              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4 justify-center sm:justify-start">
+                <Image  className="w-8" src="/logos/git-logo.png" alt="" height="30px" width="30px"/>
+                <p className="text-white text-xl hidden sm:block">Git</p>
               </div>
 
-              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4">
-                <Image  className="w-8" src="../logos/XD-logo.png" alt="" />
-                <p className="text-white text-xl">XD</p>
+              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4 justify-center sm:justify-start">
+                <Image  className="w-8" src="/logos/XD-logo.png" alt="" height="30px" width="30px"/>
+                <p className="text-white text-xl hidden sm:block">XD</p>
               </div>
 
-              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4">
-                <Image  className="w-8" src="../logos/wordpress-logo.png" alt="" />
-                <p className="text-white text-xl">Wordpress</p>
+              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4 justify-center sm:justify-start">
+                <Image  className="w-8" src="/logos/wordpress-logo.png" alt="" height="30px" width="30px"/>
+                <p className="text-white text-xl hidden sm:block">Wordpress</p>
               </div>
 
-              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4">
-                <Image  className="w-8" src="../logos/shopify-logo.png" alt="" />
-                <p className="text-white text-xl">Shopify</p>
+              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4 justify-center sm:justify-start">
+                <Image  className="w-8" src="/logos/shopify-logo.png" alt="" height="30px" width="30px"/>
+                <p className="text-white text-xl hidden sm:block">Shopify</p>
               </div>
 
-              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4">
-                <Image  className="w-8" src="../logos/tailwind-logo.png" alt="" />
-                <p className="text-white text-xl">Tailwind</p>
+              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4 justify-center sm:justify-start">
+                <Image  className="w-8" src="/logos/tailwind-logo.png" alt="" height="30px" width="30px"/>
+                <p className="text-white text-xl hidden sm:block">Tailwind</p>
               </div>
 
-              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4">
-                <Image  className="w-8" src="../logos/css-logo.png" alt="" />
-                <p className="text-white text-xl">Css</p>
+              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4 justify-center sm:justify-start">
+                <Image  className="w-8" src="/logos/css-logo.png" alt="" height="30px" width="30px"/>
+                <p className="text-white text-xl hidden sm:block">Css</p>
               </div>
 
-              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4">
-                <Image  className="w-8" src="../logos/node-logo.png" alt="" />
-                <p className="text-white text-xl">Node</p>
+              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4 justify-center sm:justify-start">
+                <Image  className="w-8" src="/logos/node-logo.png" alt="" height="30px" width="30px"/>
+                <p className="text-white text-xl hidden sm:block">Node</p>
               </div>
 
-              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4">
-                <Image  className="w-8" src="../logos/php-logo.png" alt="" />
-                <p className="text-white text-xl">PHP</p>
+              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4 justify-center sm:justify-start">
+                <Image  className="w-8" src="/logos/php-logo.png" alt="" height="30px" width="40px"/>
+                <p className="text-white text-xl hidden sm:block">PHP</p>
               </div>
 
-              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4">
-                <Image  className="w-8" src="../logos/aws-logo.png" alt="" />
-                <p className="text-white text-xl">AWS</p>
+              <div className="skill rounded-sm border border-gray-600 p-4 flex items-center gap-4 justify-center sm:justify-start">
+                <Image  className="w-8" src="/logos/aws-logo.png" alt="" height="30px" width="40px"/>
+                <p className="text-white text-xl hidden sm:block">AWS</p>
               </div>
 
 
