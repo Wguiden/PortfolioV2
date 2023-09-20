@@ -2,8 +2,6 @@ import { motion } from 'framer-motion'
 
 
 
-
-
 const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {

@@ -15,11 +15,58 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
 
 
+
+
+    const mouseCursor = document.getElementById("cursor--top");
+    const mouseCursor2 = document.getElementById("cursor--bottom");
+
+    console.log(mouseCursor);
+    console.log(mouseCursor2);
+
+
+
+    let My = 0;
+    let Mx = 0;
+    
+    window.addEventListener('mousemove', cursor);
+    
+    function cursor(e) {
+        My = e.pageY + 'px';
+        Mx = e.pageX + 'px';
+    }
+    const smoothMouse = () => {
+        mouseCursor.style.top = My;
+        mouseCursor.style.left = Mx;
+        mouseCursor2.style.top = My;
+        mouseCursor2.style.left = Mx;
+        window.requestAnimationFrame(smoothMouse);
+    } 
+    
+    smoothMouse();
+
+
+
+
+
+
+
+
+
+
     var tl = gsap.timeline();
 
     
     gsap.set(".load-logo-wrapper", {top: 240, opacity: 1});
     gsap.set(".load-logo-wrapper", {padding: "20px 0px"});
+    gsap.set(".landing-wrapper .left-col img", {x: "-120px", opacity: 0});
+    gsap.set(".landing-wrapper .right-col span", {position: "relative", display: "block", y: "85px"});
+    gsap.set(".landing-wrapper .cta-links button", {y: "40px", opacity: 0});
+    gsap.set(".footer img", {y: "40px", opacity: 0});
+    gsap.set(".nav-bar li", {y: "-68px"});
+
+
+
+    
 
 
     
@@ -29,6 +76,20 @@ function MyApp({ Component, pageProps }) {
         tl.to(".load-logo-wrapper", {delay: .5, duration: .5, top: 240, opacity: 1, ease: "power3.in"});
         tl.to(".load-container li", {duration: .6, stagger: .20, y: "-100%", opacity: 1, ease: "power2.in"}, "-=.3");
         tl.to(".load-container", {display: "none"});
+        tl.to(".landing-wrapper .right-col .title span", {y: 0, ease: "power3.out", stagger: .2, duration: 1.6}, "-=1");
+        tl.to(".landing-wrapper .right-col .text-content span", {y: 0, ease: "power3.out", stagger: .2, duration: 1.6}, "-=2.2");
+        tl.to(".landing-wrapper .left-col img", {x: 0, opacity: 1, duration: 2.4, ease:"power3.out"}, "-=2.2");
+        tl.to(".landing-wrapper .cta-links button", {y: 0, opacity: 1, duration: 1}, "-=2");
+        tl.to(".footer img", {y: 0, opacity: 1, duration: .6}, "-=1.4");
+        tl.to(".nav-bar .three", {y: 0, duration: 1.4, ease:"power3.out"}, "-=1.68");
+        tl.to(".nav-bar .two", {y: 0, duration: 1.4, ease:"power3.out"}, "-=1.60");
+        tl.to(".nav-bar .four", {y: 0, duration: 1.4, ease:"power3.out"}, "-=1.60");
+        tl.to(".nav-bar .one", {y: 0, duration: 1.4, ease:"power3.out"}, "-=1.50");
+        tl.to(".nav-bar .five", {y: 0, duration: 1.4, ease:"power3.out"}, "-=1.50");
+
+
+
+
 
 
         
@@ -140,7 +201,7 @@ function MyApp({ Component, pageProps }) {
         // aspectRatio, nearPlane, farPlane);
   
         // camera.position.z = farPlane / 2;
-        camera.position.z = 200;
+        camera.position.z = 500;
         camera.position.y = 2000;
   
         scene = new THREE.Scene({antialias:true});
@@ -208,7 +269,7 @@ function MyApp({ Component, pageProps }) {
 
       
         gsap.to(camera.position, {
-          z: -150,
+          z: -520,
           // duration: 10,
           ease: 'none',
           scrollTrigger:
@@ -216,7 +277,7 @@ function MyApp({ Component, pageProps }) {
             trigger: ".body",
             // markers: true,
             start: "top 10%",
-            end: "bottom",
+            end: "150%",
             scrub: 5,
           },
           onUpdate: () => {
@@ -348,6 +409,10 @@ function MyApp({ Component, pageProps }) {
           </div>
 
       </div>
+
+
+      <div className="custom-cursor" id="cursor--top"></div>
+      <div className="custom-cursor" id="cursor--bottom"></div>
 
 
 

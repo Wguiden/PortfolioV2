@@ -8,7 +8,7 @@ const resume = () => {
 
     <div className="flex justify-center">
       <div className="max-w-screen-lg w-full pt-40 px-5">
-          <h2 className="text-white text-6xl pb-10">Warren Guiden</h2>
+          <h2 className="text-white text-4xl sm:text-6xl pb-10">Warren Guiden</h2>
 
           <div className="intro-text text-white">
             <p className="pb-10">Software developer with 5+ years of experience. Work with tools such as Node, React, PHP, GSAP, ThreeJS, Wordpress, Shopify, and basic HTML/CSS/JavaScript stack. Bachelors Degree in Information Technology with focus of Development and Security.</p>

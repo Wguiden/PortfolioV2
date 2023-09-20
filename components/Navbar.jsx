@@ -30,27 +30,27 @@ const Navbar = () => {
     
     <div
       style={{ backgroundColor: `${color}` }}
-      className='fixed left-0 top-0 w-full z-10 ease-in duration-300 z-20'
+      className='fixed left-0 top-0 w-full z-10 ease-in duration-300 z-20 nav-bar'
     >
 
       <div className='max-w-[1240px] m-auto flex justify-center items-center p-4 text-white'>
 
         <ul style={{ color: `${textColor}` }} className='grid grid-cols-5 gap-5 text-sm sm:text-lg sm:gap-5 items-center'>
-          <li className='text-center'>
+          <li className='text-center one transition-colors hover:text-slate-400'>
             <Link href='/work'>Projects</Link>
           </li>
-          <li className='text-center'>
+          <li className='text-center two transition-colors hover:text-slate-400'>
             <Link href='/resume'>Resume</Link>
           </li>
-          <li className='flex justify-center items-center'>
+          <li className='flex justify-center items-center three transition-colors hover:text-slate-400'>
             <Link href='/'>
               <Image src="/logos/WG-logo.png" alt="" className="w-14 h-auto sm:w-20 cursor-pointer max-w-none" height="50px" width="50px"/>
             </Link>
           </li>
-          <li className='text-center'>
+          <li className='text-center four transition-colors hover:text-slate-400'>
             <Link href='/about'>About</Link>
           </li>
-          <li className='text-center'>
+          <li className='text-center five transition-colors hover:text-slate-400'>
             <Link href='/contact'>Contact</Link>
           </li>
         </ul>

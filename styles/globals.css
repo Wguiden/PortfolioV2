@@ -80,3 +80,67 @@ html {
   /* overflow: hidden; */
   padding: 25px 0px;
 }
+
+
+
+
+
+
+body{
+  cursor: none;
+}
+
+
+  #cursor--top {
+      background: linear-gradient(to right, #8711a8, #ec008b);;
+      width: 18px;
+      height: 18px;
+      opacity: .8;
+      /* border: 2px solid black; */
+      border-radius: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      z-index: 100000000;
+      pointer-events: none;
+      /* mix-blend-mode: exclusion; */
+      transition: top .01s, left .01s, width .5s, height .5s, opacity .2s, visibility .2s;
+      transition-timing-function: ease-out;
+      
+  }
+
+  @media screen and (max-width: 900px) {
+    #cursor--top{
+      display: none;
+    }
+  }
+
+
+  #cursor--bottom {
+      background: transparent;
+      width: 22px;
+      height: 22px;
+      border: 1px solid gray;
+      border-radius: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      z-index: 100000000000;
+      pointer-events: none;
+      transition: top .28s, left .28s, width .85s, height .85s, opacity .2s, visibility .2s;
+      transition-timing-function: ease-out;
+  }
+
+  @media screen and (max-width: 900px) {
+    #cursor--bottom{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    body{
+      cursor: default;
+    }
+  }
+
+  .large-cursor {
+      cursor: pointer;
+  }
