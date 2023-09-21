@@ -201,7 +201,7 @@ function MyApp({ Component, pageProps }) {
         // aspectRatio, nearPlane, farPlane);
   
         // camera.position.z = farPlane / 2;
-        camera.position.z = 500;
+        camera.position.z = 600;
         camera.position.y = 2000;
   
         scene = new THREE.Scene({antialias:true});
@@ -269,7 +269,7 @@ function MyApp({ Component, pageProps }) {
 
       
         gsap.to(camera.position, {
-          z: -520,
+          z: 50,
           // duration: 10,
           ease: 'none',
           scrollTrigger:
@@ -277,7 +277,7 @@ function MyApp({ Component, pageProps }) {
             trigger: ".body",
             // markers: true,
             start: "top 10%",
-            end: "150%",
+            end: "170%",
             scrub: 5,
           },
           onUpdate: () => {

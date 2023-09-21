@@ -12,12 +12,7 @@ import gsap from "gsap";
 import scrollTrigger from "gsap";
 
 
-
-
-
-
 export default function Document() {
-
 
   const pageLoader = {
     height: "100vh",

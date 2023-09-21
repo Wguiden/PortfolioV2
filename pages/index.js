@@ -34,7 +34,7 @@ function Home() {
       </div> */}
 
 
-      <div className="landing-wrapper flex flex-col-reverse md:flex-row justify-center h-full md:h-screen max-w-screen-lg px-5 md:p-0">
+      <div className="landing-wrapper flex flex-col-reverse md:flex-row justify-center h-full md:h-screen max-w-screen-lg px-5 md:p-0 max-h-[1100px]">
 
         <div className="left-col lg:w-1/2 relative flex items-end	hidden md:flex">
           <Image src="/warren-g2.png" alt="" width='2000px' height="2800px"/>
